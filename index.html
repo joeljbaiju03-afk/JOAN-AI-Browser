@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>JOAN AI</title>
+
+<style>
+
+body{
+background:#0b0f1a;
+font-family:Segoe UI;
+text-align:center;
+color:white;
+margin-top:120px;
+}
+
+/* RGB ANIMATED TITLE */
+
+h1{
+font-size:70px;
+font-weight:700;
+animation: rgbGlow 6s linear infinite;
+}
+
+@keyframes rgbGlow{
+
+0%{color:#ff0000;}
+20%{color:#ff7f00;}
+40%{color:#00ff00;}
+60%{color:#00ffff;}
+80%{color:#0077ff;}
+100%{color:#ff00ff;}
+
+}
+
+/* SEARCH BAR */
+
+.searchbox{
+margin-top:40px;
+}
+
+input{
+
+width:520px;
+padding:16px;
+font-size:18px;
+border-radius:30px;
+border:none;
+outline:none;
+
+background:#141a2e;
+color:white;
+
+box-shadow:0 0 12px rgba(0,255,255,0.3);
+
+}
+
+button{
+
+padding:16px 26px;
+font-size:16px;
+
+border-radius:30px;
+border:none;
+
+background:linear-gradient(90deg,#00ffff,#7a5cff);
+
+color:white;
+
+cursor:pointer;
+
+margin-left:10px;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+box-shadow:0 0 15px #00ffff;
+
+}
+
+/* WEBSITE CARDS */
+
+.shortcuts{
+
+margin-top:90px;
+
+}
+
+.card{
+
+display:inline-block;
+
+width:160px;
+
+padding:25px;
+
+margin:15px;
+
+background:#141a2e;
+
+border-radius:15px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+box-shadow:0 0 10px rgba(0,255,255,0.2);
+
+}
+
+.card:hover{
+
+transform:scale(1.1);
+
+box-shadow:0 0 20px #00ffff;
+
+background:#1f2848;
+
+}
+
+.icon{
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>JOAN AI</h1>
+
+<div class="searchbox">
+
+<form action="https://www.google.com/search">
+
+<input name="q" placeholder="Search the internet...">
+
+<button type="submit">Search</button>
+
+</form>
+
+</div>
+
+
+<div class="shortcuts">
+
+<div class="card" onclick="location.href='https://youtube.com'">
+
+<div class="icon">🎥</div>
+YouTube
+
+</div>
+
+
+<div class="card" onclick="location.href='https://wikipedia.org'">
+
+<div class="icon">📚</div>
+Wikipedia
+
+</div>
+
+
+<div class="card" onclick="location.href='https://github.com'">
+
+<div class="icon">💻</div>
+GitHub
+
+</div>
+
+
+<div class="card" onclick="location.href='https://chat.openai.com'">
+
+<div class="icon">🤖</div>
+AI Chat
+
+</div>
+
+
+<div class="card" onclick="location.href='https://twitter.com'">
+
+<div class="icon">🌐</div>
+X
+
+</div>
+
+
+<div class="card" onclick="location.href='https://reddit.com'">
+
+<div class="icon">🧠</div>
+Reddit
+
+</div>
+
+</div>
+
+</body>
+
+</html>
